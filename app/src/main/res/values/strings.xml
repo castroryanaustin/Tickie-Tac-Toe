@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TickieTac-Toe</string>
+    <string name="addPlayer_request">Enter Player Name</string>
+    <string name="addPlayer_hint1">Player 1 Name</string>
+    <string name="addPlayer_hint2">Player 2 Name</string>
+    <string name="addPlayer_btn">Start Game</string>
+    <string name="addPlayer_imgRabbit">\?</string>
+    <string name="addPlayer_imgFrog">\?</string>
+    <string name="addPlayer_imgTitle">\?</string>
+    <string name="winDialog_message">Message here</string>
+    <string name="winDialog_btn">Start Again</string>
+    <string name="turnTrue">Your Turn!</string>
+    <string name="turnFalse">Wait for your Turn!</string>
+    <string name="credits">Credits</string>
+    <string name="back">Back to Menu</string>
+    <string name="creditscontent">Created by:\nRyan Austin S. Castro\nRyan Carlo A. Crisol\nLouwie I. Jacamile\n\nArt and Assets by:\nRyan Austin S. Castro</string>
+</resources>

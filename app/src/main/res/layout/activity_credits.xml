@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.TicTacToe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddPlayers">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/addPlayer_imgTitle"
+        app:srcCompat="@drawable/title_logo" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ui_credit_dialogue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/austine_regular"
+            android:gravity="center"
+            android:text="@string/creditscontent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/austine_regular"
+        android:paddingTop="10dp"
+        android:text="@string/back"
+        android:textColor="#004D40"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

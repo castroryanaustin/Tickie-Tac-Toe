@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.TicTacToe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:rotation="180"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:id="@+id/playerOneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/ui_dialogue"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="-25dp"
+                android:layout_marginStart="-15dp"
+                android:src="@drawable/rabbit"
+                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/playerTwoName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/austine_regular"
+                    android:gravity="center"
+                    android:textColor="#004D40"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/playerTwoTurn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/austine_regular"
+                    android:gravity="center"
+                    android:textColor="#004D40"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="400dp"
+            android:layout_height="405dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/board_no_tiles"
+            android:orientation="vertical"
+            android:rotation="1"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/tile1"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/tile2"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/tile3"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/tile4"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/tile5"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/tile6"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/tile7"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/tile8"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/tile9"
+                    android:layout_width="0dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tile"
+                    android:padding="20dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/playerTwoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/ui_dialogue"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginStart="-15dp"
+                android:src="@drawable/frog"
+                tools:ignore="ContentDescription"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="25dp">
+
+                <TextView
+                    android:id="@+id/playerOneName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/austine_regular"
+                    android:gravity="center"
+                    android:textColor="#004D40"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/playerOneTurn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/austine_regular"
+                    android:gravity="center"
+                    android:textColor="#004D40"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
